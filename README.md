@@ -1,4 +1,4 @@
-# Learn Vagrant and Some Examples as good practice of vagrant
+# Learn Vagrant and Some best practices Examples 
 
 Chapter1: Simple commands  
 Chapter2: Advanced commands  
