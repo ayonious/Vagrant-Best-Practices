@@ -14,8 +14,8 @@ $ vagrant init ubuntu/trusty64
 ```
 Open 3 separate __terminals__ for each master/minion1/minion2
 
-###2. Edit Vagrant files
-in Vagrant file of master:
+###2. Edit Vagrant file
+in Vagrant file:
 ```
 Vagrant.configure(2) do |config|
  
@@ -119,7 +119,7 @@ VM, run `vagrant status NAME`.
 ```
 
 ###4. Vagrant up and ssh
-To run only the master
+To run entire 3 machines
 ```bash
 $ vagrant up
 #this will "vagrant up" all 3 machines
