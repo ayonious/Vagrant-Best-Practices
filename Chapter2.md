@@ -5,7 +5,7 @@ very nice tutorial for beginners
 
 
 
-###1.1 Add boxes in vagrant:
+### 1.1 Add boxes in vagrant:
 Adding boxes in vagrant means adding a __base box__ in your local vagrant directory so that whenever you want to open a project you just clone this image and start working. So after adding when you want to __vagrant up__ this image will be copied to your project directory and you start working with it. FYI changing in the cloned image will not harm your original  __base box__.
 So any `$ vagrant init` will clone from a __base box__.
 
@@ -39,12 +39,12 @@ This will only add the image in your local vagrant images collection. If you are
 http://stackoverflow.com/questions/10155708/vagrant-box-add-where-does-box-file-get-downloaded-to
 
 
-###1.2 Add boxes in vagrant (in offline mode):
+### 1.2 Add boxes in vagrant (in offline mode):
 This is helpful if you dont have net/slow internet. Suppose you downloaded images in one pc and you want to put this image in another pc.
 I just copied all the __base boxes__ from one pc's hard drive to another pc's hard drive this worked.
 Base boxes are located in __~/.vagrant.d/boxes__
 
-###2. How to Create a Vagrant Base Box from an Existing One
+### 2. How to Create a Vagrant Base Box from an Existing One
 Taken from: https://scotch.io/tutorials/how-to-create-a-vagrant-base-box-from-an-existing-one
 #####__NOTE:__ __This command is Applicable Only for VirtualBox__
 
@@ -114,7 +114,7 @@ $ exit
 ```
 You can also find this newly created __base box__ in the __.vagrant.d/boxes__ folder.
 
-###3. Teardown
+### 3. Teardown
 Taken from:
 https://docs.vagrantup.com/v2/getting-started/teardown.html
 
@@ -129,7 +129,7 @@ Halting the virtual machine by calling `vagrant halt` will gracefully shut down 
 Destroying the virtual machine by calling `vagrant destroy` will remove all traces of the guest machine from your system. It'll stop the guest machine, power it down, and remove all of the guest hard disks. Again, when you're ready to work again, just issue a `vagrant up`. The benefit of this is that no cruft is left on your machine. The disk space and RAM consumed by the guest machine is reclaimed and your host machine is left clean. The downside is that vagrant up to get working again will take some extra time since it has to reimport the machine and reprovision it.
 
 
-###4. SYNCED FOLDERS
+### 4. SYNCED FOLDERS
 https://docs.vagrantup.com/v2/getting-started/synced_folders.html
 
 
