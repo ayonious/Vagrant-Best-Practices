@@ -1,4 +1,4 @@
-###vagrant best practices : prepare a salt environment with vagrant
+### vagrant best practices : prepare a salt environment with vagrant
 
 Our target is to make environment to stacksalt so that we can install+work with salt from multiple machines(virtual) and after we
 have done everything we can delete the environment. This way our ubuntu can be safe from harmful installations.
@@ -8,7 +8,7 @@ This is from:
 http://www.giantflyingsaucer.com/blog/?p=5001
 
 
-###1. Create folders
+### 1. Create folders
 
 Lets make 3 folders in our desktop where we want to make the environment:
 
@@ -32,7 +32,7 @@ $ vagrant init ubuntu/trusty64
 ```
 Open 3 separate __terminals__ for each master/minion1/minion2
 
-###2. Edit Vagrant files
+### 2. Edit Vagrant files
 in Vagrant file of master:
 ```
 Vagrant.configure(2) do |config|
@@ -58,7 +58,7 @@ Vagrant.configure(2) do |config|
 end
 ```
 
-###3. Start and enter into machines
+### 3. Start and enter into machines
 in all 3 __terminals__:
 ```bash
 $ vagrant up
@@ -72,7 +72,7 @@ you will notice in __minion terminals__ `vagrant@salt-minion1:~$`   `vagrant@sal
 which means our Vagrant file config:`config.vm.hostname = <name>` is working
 
 
-###4. Install salt in machines
+### 4. Install salt in machines
 Start the virtual box GUI see that all 3 machines are running.
 
 In all 3 terminal:
@@ -94,7 +94,7 @@ $ sudo apt-get install salt-minion
 
 
 
-###4. Make connection between machines
+### 4. Make connection between machines
 
 
 Once the salt-minion package is installed run the following on the __Minion Terminal1__:
@@ -160,7 +160,7 @@ Rejected Keys:
 ```
 
 
-###5. Test the connection
+### 5. Test the connection
 
 Assuming everything went well, lets try to ping our minions (in this case just one). From __Master Terminal__ run the following:
 
