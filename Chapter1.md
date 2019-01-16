@@ -1,9 +1,9 @@
-###0. What is Vagrant?
+### 0. What is Vagrant?
 __Ans__: it is a good wrapper over VirtualBox APIs and Commands.
 Its a useful api to work with VirtualBox.
 
 
-###1. Install vagrant:
+### 1. Install vagrant:
 
 
 install virtualbox:
@@ -36,7 +36,7 @@ now start reading:
 https://docs.vagrantup.com/v2/getting-started/
 
 
-###2. Simple hello world project to start:
+### 2. Simple hello world project to start:
 
 
 ```bash
@@ -159,9 +159,9 @@ $ vagrant halt
 >Aafter halting will the changes be there if you `$ vagrant up $ vagrant ssh` >again?
 >__Answer__: yes, Only __$ vagrant destroy__ will erase all history
 
-###3. Some useful commands in vagrant:
+### 3. Some useful commands in vagrant:
 
-#####3.1 Show list of all boxes added:
+##### 3.1 Show list of all boxes added:
 >```bash
 >$ vagrant box list
 >```
@@ -171,7 +171,7 @@ $ vagrant halt
 >ubuntu/trusty64 (virtualbox, 14.04)
 >```
 
-#####3.2 Refresh vagrant file:
+##### 3.2 Refresh vagrant file:
 ```bash
 $ vagrant reload
 ```
@@ -184,7 +184,7 @@ It is like reboot where it powers off your VM  and then applies certain configur
 Example: like attaching another SATA Virtual Disk.
 
 
-#####3.3 Start vagrant in a project
+##### 3.3 Start vagrant in a project
 ```bash
 $ vagrant up
 ```
