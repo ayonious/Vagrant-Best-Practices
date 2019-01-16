@@ -1,4 +1,4 @@
-###vagrant best practices : prepare a salt environment with vagrant (shell provisioning)
+### vagrant best practices : prepare a salt environment with vagrant (shell provisioning)
 
 This example is same as before. Here I want to show you only the use of shell provisioning.
 Here it is used as initialization. So when you first spin any box you can run some shell commands.
@@ -6,7 +6,7 @@ Later when you vagrant halt you dont need to run this commands again. So you can
 
 
 
-###1. Create folders
+### 1. Create folders
 
 Lets make 3 folders in our desktop where we want to make the environment:
 
@@ -30,7 +30,7 @@ $ vagrant init ubuntu/trusty64
 ```
 Open 3 separate __terminals__ for each master/minion1/minion2
 
-###2. Edit Vagrant files
+### 2. Edit Vagrant files
 in Vagrant file of master:
 ```
 $script = <<SCRIPT
@@ -75,7 +75,7 @@ in Vagrant file of minion2:
 # Similar to minion1. Set  Ip 192.168.33.12 and name it salt-minion2
 ```
 
-###3. Start and enter into machines
+### 3. Start and enter into machines
 in all 3 __terminals__:
 ```bash
 $ vagrant up
@@ -90,7 +90,7 @@ which means our Vagrant file config:`config.vm.hostname = <name>` is working
 
 
 
-###4. Make connection between machines
+### 4. Make connection between machines
 
 Once we updated the /etc/salt/minion file we need to restart the service. From __Minion Terminal1__:
 >```bash
@@ -143,7 +143,7 @@ Rejected Keys:
 ```
 
 
-###5. Test the connection
+### 5. Test the connection
 
 Assuming everything went well, lets try to ping our minions (in this case just one). From __Master Terminal__ run the following:
 
