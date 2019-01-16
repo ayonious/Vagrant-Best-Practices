@@ -1,11 +1,11 @@
-###vagrant best practices : prepare a salt environment with vagrant (multiple machines using same Vagrant file)
+### vagrant best practices : prepare a salt environment with vagrant (multiple machines using same Vagrant file)
 
 This is from: http://humankeyboard.com/saltstack/2014/saltstack-virtualbox-vagrant.html
 
 You dont need separate projects to create multiple virtual machines. You can write everything in just one vagrant file.
 
 
-###1. Create Folder
+### 1. Create Folder
 Lets make only 1 folder in desktop where we want to make the environment
 ```bash
 $ cd VagrantBoxes
@@ -14,7 +14,7 @@ $ vagrant init ubuntu/trusty64
 ```
 Open 3 separate __terminals__ for each master/minion1/minion2
 
-###2. Edit Vagrant file
+### 2. Edit Vagrant file
 in Vagrant file:
 ```
 Vagrant.configure(2) do |config|
@@ -101,7 +101,7 @@ http://blog.scottlowe.org/2014/10/22/multi-machine-vagrant-with-yaml/
 2. taking input from __JSON__ file: 
 https://programmaticponderings.wordpress.com/2014/02/27/multi-vm-creation-using-vagrant-and-json/
 
-###3. Status of VMs
+### 3. Status of VMs
 in  __terminal__:
 ```bash
 $ vagrant status
@@ -118,7 +118,7 @@ above with their current state. For more information about a specific
 VM, run `vagrant status NAME`.
 ```
 
-###4. Vagrant up and ssh
+### 4. Vagrant up and ssh
 To run entire 3 machines
 ```bash
 $ vagrant up
@@ -134,6 +134,6 @@ To come out of a VM:
 ```bash
 $ exit
 ```
-###5. Setup Rest of Salt
+### 5. Setup Rest of Salt
 
 Setup salt yourself using previous reads
